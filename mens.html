@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            gap: 30px;
+        }
+        #container>div>div:first-child{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #container>div>div>img{
+            width: 50%;
+        }
+        h1{
+            font-size: 30px;
+        }
+        h1+h1{
+            color: grey;
+        }
+        #container>div>div:last-child{
+            font-size: 35px;
+        }
+        span:nth-child(2){
+            text-decoration: line-through;
+            color: grey;
+        }
+        span:nth-child(3){
+            color: rgb(66, 192, 66);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4314872/2018/3/20/11521523572676-Rigo-Black-Hooded-With-Thumbhole-open-Long-Cardigan-Full-Sleeve-Shrug-for-Men-1601521523572498-1.jpg" alt="Error">
+            </div> 
+            <h1>Pause</h1>
+            <h1>Men Cotton Long Sleeves Shrug</h1>
+            <div>
+                <span>₹359</span>
+                <span>₹1,499</span>
+                <span>-76%</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/4314872/2018/3/20/11521523572676-Rigo-Black-Hooded-With-Thumbhole-open-Long-Cardigan-Full-Sleeve-Shrug-for-Men-1601521523572498-1.jpg" alt="Error">
+            </div>
+            <h1>JUBINATION</h1>
+            <h1>Men Wool Sleeveless Sweater Pack Of 1</h1>
+            <div>
+                <span>₹799</span>
+                <span>₹1499</span>
+                <span>-47%</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

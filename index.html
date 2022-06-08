@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+</head>
+<style>
+    #navbar {
+        width: 100%;
+        border: 1px solid black;
+        display: flex;
+        margin: auto;
+        border-radius: 20px;
+        background-color: rgb(2, 2, 41);
+        color: white;
+        font-size: 25px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;  
+        padding: 30px; 
+         }
+
+    #navbar>#reebook {
+        margin-left: 20px;
+        /* border: 1px solid white; */
+    
+        position: absolute;
+        left: 10px;
+    }
+    #navbar>#options {
+        width: 60%;
+        float: right;
+        /* border: 1px solid white; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        /* margin-left: 800px */
+        position: absolute;
+        right: 10px;
+        
+    
+    }
+    
+</style>
+<body>
+    <div id="navbar">
+        <div id="reebook">Reebook</div>
+        <div id="options">
+            <div id="men"> Men </div>
+            <div id="women">Women</div>
+            <div id="login">Login</div>
+            <div id="signup">Signup</div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    let men = document.querySelector("#men").addEventListener("click",mensPage);
+    let women = document.querySelector("#women").addEventListener("click",womenPage);
+    let login = document.querySelector("#login").addEventListener("click",loginPage);
+    let signup = document.querySelector("#signup").addEventListener("click",logupPage);
+    
+    function mensPage()
+    {
+        window.location.href='mens.html';
+    }
+    function womenPage()
+    {
+        window.location.href='mens.html';
+    }
+    function loginPage()
+    {
+        window.location.href='login.html';
+    }
+    function logupPage()
+    {
+        window.location.href='signup.html';
+    }
+</script>
